@@ -10,7 +10,7 @@ struct TreeNode {
 class Solution {
 public:
     vector<vector<int> > FindPath(TreeNode* root,int expectNumber) {
-		vector<vector<int> > res;
+	vector<vector<int> > res;
         if(root == NULL)	return res;
         vector<int> path;
         int sum = 0;
