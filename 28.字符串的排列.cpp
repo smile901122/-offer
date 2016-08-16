@@ -9,7 +9,7 @@ public:
         return res;
     }
 private:
-    void permutation(string str, vector<string> &res, int begin){
+    void permutation(string &str, vector<string> &res, int begin){
         if(begin == str.size() - 1)	res.push_back(str);
         else{
             int i;
@@ -23,9 +23,9 @@ private:
                 
                 permutation(str, res, begin + 1);
             	//若不使用引用，则可以不见换回来，不影响结果
-            	//temp = str[i];
-            	//str[i] = str[begin];
-            	//str[begin] = temp;
+            	temp = str[i];
+            	str[i] = str[begin];
+            	str[begin] = temp;
             } 
         }
     }
