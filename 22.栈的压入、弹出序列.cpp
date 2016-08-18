@@ -20,7 +20,7 @@ public:
                 	++j;
             	}
         	}
-        if(st.empty() && j == n2)	res = true;;
+            if(st.empty() && j == n2)	res = true;;
         }
         return res;
     }
